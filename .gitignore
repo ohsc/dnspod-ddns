@@ -1,0 +1,12 @@
+.DS_Store
+*.seed
+*.log
+*.csv
+*.dat
+*.out
+*.pid
+*.swp
+*.swo
+testing
+node_modules
+.nide

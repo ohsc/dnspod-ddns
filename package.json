@@ -1,0 +1,46 @@
+{
+  "name": "dnspod-ddns",
+  "description": "A DNSPOD DDNS Client",
+  "version": "0.1.0",
+  "keywords": [
+    "dnspod",
+    "ddns",
+    "update record"
+  ],
+  "homepage": "https://github.com/ohsc/dnspod-ddns",
+  "author": {
+    "name": "Chao Shen",
+    "email": "shen218@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ohsc/dnspod-ddns.git"
+  },
+  "bugs": {
+    "url": "http://github.com/ohsc/dnspod-ddns/issues"
+  },
+  "licenses": [
+    {
+      "type": "BSD",
+      "url": "http://github.com/ohsc/dnspod-ddns/raw/master/LICENSE.md"
+    }
+  ],
+  "main": "./lib/index.js",
+  "bin": {
+    "dnspod-ddns": "./bin/cli.js"
+  },
+  "dependencies": {
+    "dnspod-client": "0.1.2",
+    "commander": "1.0.5",
+    "async": "0.1.22"
+  },
+  "devDependencies": {
+    "mocha": ">= 1.5.0",
+    "jslint": ">= 0.1.9"
+  },
+  "scripts": {
+    "test": "node_modules/.bin/mocha test/test.js",
+    "lint": "find . -name '*.js' -not -regex './node_modules.*' -print0 | xargs -0 ./node_modules/.bin/jslint --sloppy --stupid --node --color --git"
+  },
+  "readmeFilename": "README.md"
+}
