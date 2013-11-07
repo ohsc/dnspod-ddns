@@ -26,6 +26,8 @@ Otherwise, you can run it in daemon mode.
 dnspod-ddns --dns-domain yourdomain.com --dns-host yourhost --user youremail --passwd yourpassword --daemon
 ```
 
+In some cases, you may want to resolve the name with your local IP instead of public IP. Just use `--localip` or `-l`
+
 ## License
 
 Copyright (c) 2012 Chao Shen. This software is licensed under the BSD License.
