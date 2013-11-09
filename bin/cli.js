@@ -14,6 +14,7 @@ program
     .option('-u, --user <user>', 'Set user name(*required)')
     .option('-p, --passwd <password>', 'Set password(*required)')
     .option('-D, --daemon', 'Start as daemon mode')
+    .option('-l, --localip', 'Use local IP instead of public IP')
     .parse(process.argv);
 
 if (!program.dnsDomain) {
@@ -34,7 +35,8 @@ if (!program.dnsDomain) {
         sub_domain: program.dnsHost,
         login_email: program.user,
         login_password: program.passwd,
-        is_daemon: program.daemon
+        is_daemon: program.daemon,
+        is_localip: program.localip
     };
     console.log('received args %j', options);
     ddns.run(options);
