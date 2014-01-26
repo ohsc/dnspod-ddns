@@ -34,4 +34,4 @@ dnspod-ddns --dns-domain yourdomain.com --dns-host yourhost --user youremail --p
 
 ## License
 
-Copyright (c) 2012 Chao Shen. This software is licensed under the BSD License.
+Copyright (c) 2014 Chao Shen. This software is licensed under the BSD License.
