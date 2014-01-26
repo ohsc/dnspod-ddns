@@ -2,12 +2,13 @@
 
 var fs = require('fs'),
     program = require('commander'),
+    packageInfo = require('../package.json'),
     ddns = require('../'),
     options;
 
 
 program
-    .version('0.0.1')
+    .version(packageInfo.version)
     .usage('[options] [value ...]')
     .option('-d, --dns-domain <domain>', 'Set domain name(*required)')
     .option('-H, --dns-host <host>', 'Set host name(*required)')
