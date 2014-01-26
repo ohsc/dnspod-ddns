@@ -1,7 +1,7 @@
 {
   "name": "dnspod-ddns",
   "description": "A DNSPOD DDNS Client",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "keywords": [
     "dnspod",
     "ddns",
@@ -30,17 +30,17 @@
     "dnspod-ddns": "./bin/cli.js"
   },
   "dependencies": {
-    "dnspod-client": "0.1.2",
-    "commander": "1.0.5",
-    "async": "0.1.22"
+    "dnspod-client": "0.1.3",
+    "commander": "2.1.0",
+    "async": "0.2.10",
+    "bunyan": "0.22.1"
   },
   "devDependencies": {
-    "mocha": ">= 1.5.0",
-    "jslint": ">= 0.1.9"
+    "mocha": ">= 1.17.1",
+    "jslint": ">= 0.2.7"
   },
   "scripts": {
-    "test": "node_modules/.bin/mocha test/test.js",
-    "lint": "find . -name '*.js' -not -regex './node_modules.*' -print0 | xargs -0 ./node_modules/.bin/jslint --sloppy --stupid --node --color --git"
+    "test": "node_modules/.bin/mocha test/test.js"
   },
   "readmeFilename": "README.md"
 }
