@@ -38,7 +38,6 @@ if (!program.dnsDomain) {
         is_daemon: program.daemon,
         interface_name: program.interface
     };
-    console.log('received args %j', options);
     ddns.run(options);
 }
 
